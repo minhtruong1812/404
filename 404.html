@@ -41,19 +41,20 @@
     <script src="js/scripts.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            function countdown(time) {
-                if (time > 0) {
-                    time--;
-                    document.getElementById('countdown').textContent = time;
-                    setTimeout(function() {
-                        countdown(time);
-                    }, 1000);
-                } else {
-                    window.location.href = 'https://minhtruong1812.github.io/mt/';
-                }
-            }
-            countdown(16);
-        });
+    function countdown(time) {
+        if (time > 0) {
+            time--;
+            document.getElementById('countdown').textContent = time;
+            setTimeout(function() {
+                countdown(time);
+            }, 1000);
+        } else {
+            // Thay URL thành website bạn muốn chuyển hướng
+            window.location.href = 'https://minhtruong1812.github.io/mt/';
+        }
+    }
+    countdown(16);
+});
     </script>
 </body>
 </html>
